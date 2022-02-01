@@ -7,6 +7,8 @@ import cors from 'cors';
 class App {
   constructor() {
     this.server = express();
+
+    this.routes();
   }
 
   middlewares() {
