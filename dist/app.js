@@ -7,6 +7,8 @@ var _cors = require('cors'); var _cors2 = _interopRequireDefault(_cors);
 class App {
   constructor() {
     this.server = _express2.default.call(void 0, );
+
+    this.routes();
   }
 
   middlewares() {
