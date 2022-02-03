@@ -1,19 +1,24 @@
 {
-  "name": "shop-backend-3",
+  "name": "node-api",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "nodemon src/server.js",
-    "build": "sucrase ./src -d ./dist --transforms imports",
-    "deploy": "npm run build && npm run start",
-    "start": "node dist/server.js"
-  },
+  "description": "Deploy de uma aplicação Node.js usando AWS Elastic Beanstalk",
+  "main": "app.js",
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^15.0.0",
-    "express": "^4.17.2",
-    "nodemon": "^2.0.15",
-    "sucrase": "^3.20.3"
-  }
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "codepipeline",
+    "beanstalk"
+  ],
+  "author": "Offstore",
+  "license": "MIT"
 }
