@@ -24,11 +24,11 @@ app.get("/social/:id", (req, res) => {
 
 app.get('/rotatestedb', async (req, res) => {
   const sequelize = new Sequelize(
-    'shop',
-    'postgres',
-    'pg2022#OffStore!',
+    process.env.DB_NAME,
+    process.env.DB_USER,
+    process.env.DB_PASS,
     {
-      host: 'offstore.cpnztdd8ok7k.sa-east-1.rds.amazonaws.com',
+      host: process.env.DB_HOST,
       dialect: 'postgres',
 
       pool: {
